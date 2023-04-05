@@ -31,6 +31,6 @@ public class SetTest {
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void setContainsTest(int number) {
-        assertThat(numbers.contains(number)).isTrue();
+        assertThat(numbers).contains(number);
     }
 }
